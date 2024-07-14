@@ -15,8 +15,10 @@
     // Initiate the wowjs
     new WOW().init();
 
-
+    $('.navbar').fadeIn('slow').css('display', 'flex');
+    
     $(window).scroll(function () {
+        $('.navbar').fadeIn('slow').css('display', 'flex');
         if ($(this).scrollTop() > 0) {
             $('.navbar').fadeIn('slow').css('display', 'flex');
         } else {
